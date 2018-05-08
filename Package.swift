@@ -15,7 +15,7 @@ let package = Package(
             name: "VaporRecaptcha",
             dependencies: ["Vapor"]),
         .testTarget(
-            name: "vapor-recaptchaTests",
+            name: "VaporRecaptchaTests",
             dependencies: ["VaporRecaptcha"]),
     ]
 )
