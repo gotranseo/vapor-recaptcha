@@ -3,19 +3,19 @@
 import PackageDescription
 
 let package = Package(
-    name: "vapor-recaptcha",
+    name: "VaporRecaptcha",
     products: [
-        .library(name: "vapor-recaptcha", targets: ["vapor-recaptcha"]),
+        .library(name: "VaporRecaptcha", targets: ["VaporRecaptcha"]),
     ],
     dependencies: [
         .package(url: "https://github.com/vapor/vapor.git", from: "3.0.0"),
     ],
     targets: [
         .target(
-            name: "vapor-recaptcha",
+            name: "VaporRecaptcha",
             dependencies: ["Vapor"]),
         .testTarget(
             name: "vapor-recaptchaTests",
-            dependencies: ["vapor-recaptcha"]),
+            dependencies: ["VaporRecaptcha"]),
     ]
 )
