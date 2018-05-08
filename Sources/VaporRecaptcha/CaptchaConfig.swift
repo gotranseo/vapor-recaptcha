@@ -9,4 +9,8 @@ import Foundation
 
 public struct CaptchaConfig {
     let secretKey: String
+    
+    public init(secretKey: String) {
+        self.secretKey = secretKey
+    }
 }

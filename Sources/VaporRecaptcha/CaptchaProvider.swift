@@ -12,7 +12,7 @@ public struct CaptchaProvider: Provider {
     
     private let config: CaptchaConfig
     
-    init(config: CaptchaConfig) {
+    public init(config: CaptchaConfig) {
         self.config = config
     }
     

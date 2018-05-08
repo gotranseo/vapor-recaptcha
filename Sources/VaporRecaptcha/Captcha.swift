@@ -13,7 +13,7 @@ public struct Captcha: Service {
     private let client: Client
     private let endpoint = "https://www.google.com/recaptcha/api/siteverify"
     
-    init(config: CaptchaConfig, client: Client) {
+    public init(config: CaptchaConfig, client: Client) {
         self.config = config
         self.client = client
     }
